@@ -1,0 +1,135 @@
+.main__welcome {
+    padding: 140px 0;
+}
+
+.main__welcome__wrap {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+.main__welcome__poster {
+    max-width: 575px;
+    width: 100%;
+    max-height: 582px;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.main__welcome__desc-text-mini {
+    max-width: 250px;
+    width: 100%;
+    background: var(--txt-mini-bg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    color: var(--def-clr-blue);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+    letter-spacing: 0.36px;
+    margin-bottom: 22px;
+}
+
+.main__welcome__desc-title {
+    color: var(--def-clr-blue);
+    font-family: "Mulish-Regular", sans-serif;
+    font-size: 45px;
+    font-weight: 400;
+    line-height: 59px;
+    letter-spacing: 0.36px;
+    margin-bottom: 12px;
+}
+
+.main__welcome__desc-text {
+    color: var(--clr-txt);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+    letter-spacing: 0.36px;
+}
+
+.main__welcome__desc-text:nth-of-type(2) {
+    margin-bottom: 10px;
+}
+
+.main__welcome__desc-text:last-of-type {
+    margin-bottom: 18px;
+}
+
+.main__welcome__desc-exp {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.main__welcome__desc-exp-years {
+    max-width: 198px;
+    width: 100%;
+    height: 220px;
+    background: var(--txt-mini-bg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+
+}
+
+.main__welcome__desc-exp-years-title {
+    color: var(--clr-orange);
+    font-family: "Mulish-Regular", sans-serif;
+    font-size: 80px;
+    font-weight: 400;
+    line-height: 88px;
+    letter-spacing: 0.36px;
+}
+
+.main__welcome__desc-exp-years-text {
+    max-width: 112px;
+    width: 100%;
+    color: var(--def-clr-blue);
+    text-align: center;
+    font-family: "Mulish-Regular", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 0.36px;
+}
+
+.main__welcome__desc-exp-list {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    gap: 10px;
+}
+
+.main__welcome__desc-exp-list-item-text {
+    color: var(--clr-txt);
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 27px;
+    letter-spacing: 0.36px;
+}
+@media screen and (max-width: 1280px) {
+    .main__welcome__wrap {
+        flex-direction: column;
+    }
+    .main__welcome__desc {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}
+@media screen and (max-width: 490px) {
+    .main__welcome__desc-exp {
+        flex-direction: column;
+    }
+    .main__welcome__desc-exp-years-title {
+        font-size: 60px;
+    }
+    .main__welcome__desc-exp-years-text {
+        font-size: 16px;
+    }
+}

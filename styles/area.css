@@ -1,0 +1,120 @@
+.main__area {
+    background: var(--txt-mini-bg);
+    padding: 240px 0 140px;
+}
+
+.main__area__heading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 48px;
+}
+
+.main__area__heading-text-mini {
+    max-width: 214px;
+    width: 100%;
+    background: #fff;
+    color: var(--def-clr-blue);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+    letter-spacing: 0.36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 22px;
+}
+
+.main__area__heading-title {
+    color: var(--def-clr-blue);
+    font-family: "Mulish-Regular", sans-serif;
+    font-size: 45px;
+    font-weight: 400;
+    line-height: 59px;
+    letter-spacing: 0.36px;
+    margin-bottom: 12px;
+}
+
+.main__area__heading-text {
+    max-width: 820px;
+    width: 100%;
+    color: var(--clr-txt);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+    letter-spacing: 0.36px;
+}
+
+.main__area__services {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.main__area__services-service {
+    width: 380px;
+    height: 378px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    background: var(--def-clr-blue);
+    padding: 50px 35px;
+    transition: .3s;
+}
+.main__area__services-service:hover {
+    scale: 1.05;
+}
+
+.main__area__services-service-desc {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.main__area__services-service-desc-title {
+    margin-bottom: 15px;
+    color: var(--clr-orange);
+    font-family: "Mulish-Regular", sans-serif;
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 38px;
+    letter-spacing: 0.36px;
+}
+
+.main__area__services-service-desc-text {
+    margin-bottom: 22px;
+    color: #d2d2d2;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+    letter-spacing: 0.36px;
+}
+
+.main__area__services-service-desc-link {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+    letter-spacing: 0.36px;
+    transition: .3s;
+}
+.main__area__services-service-desc-link:hover {
+    color: var(--clr-orange);
+}
+@media screen and (max-width: 420px)  {
+    .main__area__services-service-desc-title {
+        font-size: 20px;
+        line-height: 35px;
+        margin-bottom: 10px;
+    }
+    .main__area__services-service-desc-text {
+        font-size: 14px;
+        line-height: 25px;
+        margin-bottom: 16px;
+    }
+}

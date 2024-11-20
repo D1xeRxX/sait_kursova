@@ -1,0 +1,98 @@
+.main__banner {
+    height: 814px;
+    background: url("../imgs/banner-bg.png") no-repeat center/cover;
+}
+
+.main__banner__wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.main__banner__solutions {
+    max-width: 662px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 32px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+    letter-spacing: 0.36px;
+    background: #ffffff33;
+    transition: .3s;
+}
+
+.main__banner__solutions:hover {
+    scale: 1.05;
+}
+
+.main__banner__solutions:hover img {
+    animation: roll 3s ease infinite;
+}
+
+.main__banner__title {
+    max-width: 712px;
+    width: 100%;
+    color: #fff;
+    font-family: "Mulish-Regular";
+    font-size: 60px;
+    font-weight: 400;
+    line-height: 78px;
+    letter-spacing: 1.2px;
+    margin-bottom: 30px;
+}
+
+.main__banner__services {
+    max-width: 228px;
+    width: 100%;
+    height: 68px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--def-clr-blue);
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0.36px;
+    background: var(--clr-orange);
+    border: 2px solid transparent;
+    transition: .3s;
+}
+.main__banner__services:hover {
+    background: #fff;
+}
+
+@keyframes roll {
+    0% {
+        transform: rotateZ(0deg);
+    }
+
+    100% {
+        transform: rotateZ(360deg);
+    }
+}
+@media screen and (max-width: 620px) {
+    .main__banner__solutions {
+        font-size: 16px;
+    }
+}
+@media screen and (max-width: 540px) {
+    .main__banner__title {
+        font-size: 45px;
+        line-height: 66px;
+    }
+} 
+@media screen and (max-width: 420px) {
+    .main__banner__title {
+        font-size: 30px;
+        line-height: 54px;
+    }
+    .main__banner__services {
+        max-width: 198px;
+        height: 54px;
+    }
+} 
